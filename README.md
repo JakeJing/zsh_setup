@@ -20,7 +20,9 @@ exit and open a new terminal (ctr + A + D)
 3. install zsh-syntax-highlighting
 
 > git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+
 > echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+
 > source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 If you finish the previous steps, you should be able to customize the .zshrc file in your home directory. Here I prefer to use the two plugins (zsh-autosuggestions, autojump and colorls) for my zsh.
@@ -32,15 +34,21 @@ If you finish the previous steps, you should be able to customize the .zshrc fil
 5. autojump
 
 > git clone git://github.com/wting/autojump.git
+
 > cd autojump
+
 > ./install.py or ./uninstall.py
 
 6. colorls (follow the instruction from https://github.com/athityakumar/colorls)
 
 > sudo apt update
+
 > sudo apt install ruby-full
+
 > ruby --version
+
 > gem install colorls
+
 > source $(dirname $(gem which colorls))/tab_complete.sh
 
 7. add the plugins into the .zshrc
@@ -48,7 +56,9 @@ If you finish the previous steps, you should be able to customize the .zshrc fil
 edit and add the following lines:
 
 > plugins=(git zsh-autosuggestions autojump)
+
 > [[ -s /home/ubuntu/.autojump/etc/profile.d/autojump.sh ]] && source /home/ubuntu/.autojump/etc/profile.d/autojump.sh
+
 > alias ls="colorls --sd -A"
 
 Restart the terminal or login the server once again. It should work now!
