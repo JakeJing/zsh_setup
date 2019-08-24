@@ -67,7 +67,7 @@ Note: For mac users, it is better to use iterm2 as an alternative to the origina
 
 8. add the key bindings to the .zshrc file
 
-> git clone https://raw.githubusercontent.com/JakeJing/zsh_setup/master/bindings.txt
+> wget https://raw.githubusercontent.com/JakeJing/zsh_setup/master/bindings.txt
 
 > cat bindings.txt >> .zshrc
 
