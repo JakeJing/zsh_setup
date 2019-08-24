@@ -65,4 +65,9 @@ Restart the terminal or login the server once again. It should work now!
 
 Note: For mac users, it is better to use iterm2 as an alternative to the original shell. Most of the previous steps are also quitable for mac. You need to set the iTerm2 as the default shell, and bind a shortcut to relaunch a new window for iTerm2. It is also quite easy to customize the basic settings, such as foreground or background colors.
 
+8. add the key bindings to the .zshrc file
+
+> git clone 
+> cat bindings.txt >> .zshrc
+
 
