@@ -14,36 +14,13 @@ function _zle-with-style() {
 	select-word-style normal
 }
 
-# function _backward-word()		{ _zle-with-style backward-word			bash }
-# function _forward-word()		{ _zle-with-style forward-word			bash }
-# function _backward-arg()		{ _zle-with-style backward-word			shell }
-# function _forward-arg()			{ _zle-with-style forward-word			shell }
-# function _backward-kill-arg()	{ _zle-with-style backward-kill-word 	shell }
-# function _forward-kill-arg()	{ _zle-with-style kill-word 			shell }
+function _forward-word()		{ _zle-with-style forward-word			bash }
 function _backward-kill-word()	{ _zle-with-style backward-kill-word 	normal }
-# function _backward-kill-path()	{ _zle-with-style backward-kill-word 	normal	'/' }
 
-# zle -N _backward-word
-# zle -N _forward-word
-# zle -N _backward-arg
-# zle -N _forward-arg
-# zle -N _backward-kill-arg
-# zle -N _forward-kill-arg
+zle -N _forward-word
 zle -N _backward-kill-word
-# zle -N _backward-kill-path
-
-# bindkey '\C-[OD'	_backward-word		# ctrl-left
-# bindkey "\e[1;5D"	_backward-word		# ctrl-left
-# bindkey '\C-[OC'	_forward-word		# ctrl-right
-# bindkey "\e[1;5C"	_forward-word		# ctrl-right
-# bindkey '\e\e[D'	_backward-arg		# alt-left
-# bindkey '\e[1;3D'	_backward-arg		# alt-left
-# bindkey '\e[1;3C'	_forward-arg		# alt-right
-# bindkey '\e\e[C'	_forward-arg		# alt-right
-# bindkey '\e\C-?'	_backward-kill-arg	# alt-backspace
-# bindkey '\e\e[3~'	_forward-kill-arg	# alt-del
+bindkey '\C-[OC'	_forward-word		# ctrl-right
 bindkey '\C-w'		_backward-kill-word
-# bindkey '\C-f'		_backward-kill-path
 
 # Allow more powerful history-i-search (multiple uses in the same line)
 autoload -Uz narrow-to-region
