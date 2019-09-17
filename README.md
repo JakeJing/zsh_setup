@@ -47,7 +47,7 @@ You may need to have the nerd font first installed.
 
 > brew cask install font-hack-nerd-font
 
-After this, you should be able to set the Hack Nerd Font as the default for Non-ASCII font. (go to the setting for iterms2 preference (cmd + ,) - Profiles - Text - Non-ASCII Font- choose Hack Nerd Fonts).
+After this, you should be able to set the Hack Nerd Font as the default for Non-ASCII font. (go to the setting for iterms2 preference (cmd + ,) - Profiles - Text - Non-ASCII Font- choose Hack Nerd Fonts). If you can not find it, try to check the update for iterms (iterm2 - check for update). 
 
 > sudo apt update
 
