@@ -76,6 +76,7 @@ Note: For mac users, it is better to use iterm2 as an alternative to the origina
 8. some useful alias to improve productivity of zsh by adding the following lines in the .zsh file
 
 > alias -s {yml,yaml,csv,txt,conllu}=vim
+
 > d='dirs -v | head -10'
 1='cd -'
 2='cd -2'
