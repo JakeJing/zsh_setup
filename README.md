@@ -94,4 +94,7 @@ Note: For mac users, it is better to use iterm2 as an alternative to the origina
 
 > cat bindings.txt >> .zshrc
 
+10. my own .zshrc fiel on mac
+
+I also put my .zshrc setting for my mac here. **Note:** you shouldn't directly use it to replace your own .zshrc file, since the paths and username are totally different. Ideally, you should use it as a templeate and extract certain usful piece of settings, and put them in your .zshrc file.
 
