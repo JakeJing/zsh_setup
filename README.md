@@ -73,7 +73,21 @@ Restart the terminal or login the server once again. It should work now!
 
 Note: For mac users, it is better to use iterm2 as an alternative to the original shell. Most of the previous steps are also quitable for mac. You need to set the iTerm2 as the default shell, and bind a shortcut to relaunch a new window for iTerm2. It is also quite easy to customize the basic settings, such as foreground or background colors.
 
-8. add the key bindings to the .zshrc file
+8. some useful alias to improve productivity of zsh by adding the following lines in the .zsh file
+
+> alias -s {yml,yaml,csv,txt,conllu}=vim
+> d='dirs -v | head -10'
+1='cd -'
+2='cd -2'
+3='cd -3'
+4='cd -4'
+5='cd -5'
+6='cd -6'
+7='cd -7'
+8='cd -8'
+9='cd -9'
+
+9. add the key bindings to the .zshrc file
 
 > wget https://raw.githubusercontent.com/JakeJing/zsh_setup/master/bindings.txt
 
